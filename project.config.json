@@ -50,7 +50,7 @@
     "swc": false,
     "disableSWC": true
   },
-  "appid": "wxe8cbd719534a4207",
+  "appid": "wx",
   "projectname": "love-chat-assistant",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",

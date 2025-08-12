@@ -31,7 +31,7 @@ console.log('初始化OCR客户端，使用环境变量中的密钥');
 const client = new OcrClient(clientConfig);
 
 // DeepSeek API配置
-const DEEPSEEK_API_KEY = "sk-cae00e21b2f44aeb9e4007788d53b975";
+const DEEPSEEK_API_KEY = "sk-";
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 // 生成AI回复建议
