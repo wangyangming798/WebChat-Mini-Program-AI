@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="header">
+    <text class="title">AI恋爱聊天助手</text>
+    <text class="subtitle">上传聊天截图，获取智能回复建议</text>
+  </view>
+
+  <view class="upload-section">
+    <button class="upload-btn" bindtap="chooseImage">选择聊天截图</button>
+  </view>
+
+  <view class="error-message" wx:if="{{error}}">
+    <text>{{error}}</text>
+  </view>
+
+  <view class="result-section" wx:if="{{suggestions && suggestions.length > 0}}">
+    <view class="suggestion-card">
+      <text class="suggestion-title">智能回复建议</text>
+      <view class="suggestions-list">
+        <view class="suggestion-item" wx:for="{{suggestions}}" wx:key="index">
+          <text class="suggestion-content">{{item}}</text>
+          <button class="copy-btn" bindtap="copySuggestion" data-index="{{index}}">复制</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="loading" wx:if="{{loading}}">
+    <text>正在分析中...</text>
+  </view>
+</view> 

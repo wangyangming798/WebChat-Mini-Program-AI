@@ -1,0 +1,16 @@
+{
+  "name": "analyzeChat",
+  "version": "1.0.0",
+  "description": "分析聊天记录的云函数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest",
+    "tencentcloud-sdk-nodejs": "^4.0.0",
+    "axios": "^1.6.0"
+  }
+} 
